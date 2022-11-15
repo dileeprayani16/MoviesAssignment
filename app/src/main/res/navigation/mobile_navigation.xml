@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_movies">
+
+    <fragment
+        android:id="@+id/navigation_movies"
+        android:name="com.movies.assignment.ui.fragment.popularmovie.PopularMovieFragment"
+        android:label="@string/title_movies"
+        tools:layout="@layout/fragment_popular_movie">
+        <action
+            android:id="@+id/action_navigation_movies_to_navigation_movie_details"
+            app:destination="@id/navigation_movie_details" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_movie_details"
+        android:name="com.movies.assignment.ui.fragment.moviedetails.MovieDetailsFragment"
+        android:label="@string/title_movie_details"
+        tools:layout="@layout/fragment_movie_details">
+        <argument
+            android:name="details"
+            app:argType="com.movies.data.model.networkmodel.MovieDetailResponse" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
+</navigation>

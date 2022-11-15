@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Popular Movies</string>
+    <string name="title_movies">Movies</string>
+    <string name="title_movie_details">Movie Details</string>
+
+    <string name="key_is_adult">Is Adult</string>
+    <string name="key_original_language">Original Language</string>
+    <string name="key_original_title">Original Title</string>
+    <string name="key_overview">Overview</string>
+    <string name="key_popularity">Popularity</string>
+    <string name="key_vote_average">Vote Average</string>
+    <string name="key_vote_count">Vote Count</string>
+    <string name="key_genres">Genres</string>
+    <string name="key_runtime">Runtime</string>
+    <string name="key_home_page">Homepage</string>
+</resources>
